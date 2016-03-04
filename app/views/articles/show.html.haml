@@ -1,0 +1,16 @@
+%p
+	%strong Title:
+	= @article.title
+
+%p
+	%strong Text:
+	= @article.text
+
+%h2 Comments
+= render @article.comments
+
+%h2 Add Comment
+= render 'comments/form'
+
+= link_to 'back', articles_path
+= link_to 'edit', edit_article_path(@article)

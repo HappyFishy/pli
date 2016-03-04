@@ -1,0 +1,9 @@
+%p 	
+	%strong Commenter:
+	= comment.commenter
+%p
+	%strong Comment:
+	= comment.body
+%p 
+	= link_to 'Delete Comment', [comment.article, comment], method: :delete, data: { confirm: 'cool hit ok' }
+%br/
